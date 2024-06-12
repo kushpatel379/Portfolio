@@ -111,9 +111,17 @@ body {
     width: 100px;
 }
 
+.linkedin:hover{
+    cursor: pointer;
+}
+
 .github {
     height: 50px;
     width: 75px;
+}
+
+.github:hover{
+    cursor: pointer;
 }
 
 /* dividing line */
