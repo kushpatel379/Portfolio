@@ -1,0 +1,595 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+/* navbar */
+.navbar {
+    height: 100vh;
+    width: 359px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #242525;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* profile pic */
+.picture {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* navbar headings */
+.navbar h3 {
+    display: block;
+    color: #D0D0D0;
+    text-align: center;
+}
+
+.navbar h3:hover {
+    color: #124E66;
+}
+
+/* container for the entire left side */
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 359px;
+    width: calc(100% - 359px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 100vh;
+}
+
+/* intro container */
+.main-container {
+    background-color: #121313;
+    padding: 20px;
+    /* margin-top: 0; */
+    /* flex-grow: 1; */
+    /* overflow-x: hidden; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* overflow-y: hidden; */
+}
+
+
+.initial_container {
+    margin-top: 20px;
+}
+
+#initial {
+    color: blue;
+    font-family: "Brush Script MT", cursive;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+/* .name_container {} */
+
+/* name */
+#name_title {
+    color: #225C73;
+    text-align: center;
+    font-size: 137px;
+    margin: 0;
+}
+
+/* intro container */
+.intro {
+    text-align: center;
+}
+
+#message {
+    color: #D0D0D0;
+    width: 802px;
+    font-size: 20px;
+}
+
+/* logo container */
+.logos {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.linkedin {
+    height: 50px;
+    width: 100px;
+}
+
+.github {
+    height: 50px;
+    width: 75px;
+}
+
+/* dividing line */
+.divider_1 {
+    width: 90%;
+    height: 2px;
+    border-bottom: 1px solid #245D74;
+    margin-top: 20px;
+}
+
+.education_container {
+    background-color: #121313;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#education_name {
+    color: #275F76;
+    text-align: left;
+    padding-left: 58px;
+    font-size: 40px;
+}
+
+/* container list */
+.list{
+    padding-left: 35px;
+}
+
+.list ul li::marker{
+    color: #275F76;
+    font-size: 16px;
+}
+
+#bullet{
+    color: #275F76;
+}
+
+/* bachelor list */
+#bachelor{
+    color: #D0D0D0;
+    width: 353px;
+    font-size: 20px;
+    /* padding-left: 58px; */
+}
+
+/* minor list */
+#minor{
+    color: #D0D0D0;
+    width: 353px;
+    font-size: 20px;
+
+}
+
+/* master list */
+#master{
+    color: #D0D0D0;
+    width: 353px;
+    font-size: 20px;
+
+}
+
+/* second divider */
+.divider_2{
+    width: 90%;
+    height: 2px;
+    border-bottom: 1px solid #245D74;
+    margin: 20px auto;
+}
+
+
+.experience_container{
+    background-color: #121313;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+}
+
+/* experience title */
+#experience_name {
+    color: #275F76;
+    text-align: left;
+    padding-left: 58px;
+    font-size: 40px;
+}
+
+#bullet_exp{
+    color: #275F76;
+}
+
+.list_exp{
+    padding-left: 35px;
+}
+
+.list_exp ul li::marker{
+    color: #275F76;
+    font-size: 16px;
+}
+
+/* first experience bullet */
+#one_exp{
+    color: #D0D0D0;
+    width: 920px;
+    font-size: 20px;
+}
+
+/* extra space between insurancea and june */
+.extra1{
+    margin: 175px;
+}
+
+#indent{
+    color: #275F76;
+}
+
+#second_exp{
+    color: #D0D0D0;
+    width: 920px;
+    font-size: 20px;
+}
+
+#third_exp{
+    color: #D0D0D0;
+    width: 920px;
+    font-size: 20px;
+}
+
+#fourth_exp{
+    color: #D0D0D0;
+    width: 920px;
+    font-size: 20px;
+}
+
+#fifth_exp{
+    color: #D0D0D0;
+    width: 920px;
+    font-size: 20px;
+}
+
+#sixth_exp{
+    color: #D0D0D0;
+    width: 920px;
+    font-size: 20px;
+}
+
+#seventh_exp{
+    color: #D0D0D0;
+    width: 920px;
+    font-size: 20px;
+}
+
+/* third divider */
+.divider_3{
+    width: 90%;
+    height: 2px;
+    border-bottom: 1px solid #245D74;
+    margin: 20px auto;
+}
+
+/* project */
+.project_container{
+    background-color: #121313;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+}
+
+/* project title */
+#project_name {
+    color: #275F76;
+    text-align: left;
+    padding-left: 58px;
+    font-size: 40px;
+}
+
+.list_project{
+    padding-left: 35px;
+}
+
+/* project bullets */
+.list_project ul li::marker{
+    color: #275F76;
+    font-size: 16px;
+}
+
+#bullet_project{
+    color: #275F76;
+}
+
+/* HOP2IT */
+#one_project{
+    color: #D0D0D0;
+    width: 920px;
+    font-size: 24px;
+}
+
+.extra_project{
+    font-size: 16px;
+    font-style: italic;
+}
+
+#indent_project{
+    color: #275F76;
+}
+
+#one_bullet_proj{
+    margin-top: 10px;
+    color: #D0D0D0;
+    width: 920px;
+    font-size: 20px;
+}
+
+#two_bullet_proj{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #D0D0D0;
+    width: 920px;
+    font-size: 20px;
+}
+
+/* Bookstore database */
+#two_project{
+    color: #D0D0D0;
+    width: 920px;
+    font-size: 24px;
+}
+
+.extra_project2{
+    font-size: 16px;
+    font-style: italic;
+}
+
+#indent_project2{
+    color: #275F76;
+}
+
+#one_bullet_proj2{
+    margin-top: 10px;
+    color: #D0D0D0;
+    width: 920px;
+    font-size: 20px;
+}
+
+#two_bullet_proj2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #D0D0D0;
+    width: 920px;
+    font-size: 20px;
+}
+
+
+/* Multiplication Table */
+#three_project{
+    color: #D0D0D0;
+    width: 920px;
+    font-size: 24px;
+}
+
+.extra_project3{
+    font-size: 16px;
+    font-style: italic;
+}
+
+#indent_project3{
+    color: #275F76;
+}
+
+#one_bullet_proj3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #D0D0D0;
+    width: 920px;
+    font-size: 20px;
+}
+
+
+/* Scrabble Game*/
+#four_project{
+    color: #D0D0D0;
+    width: 920px;
+    font-size: 24px;
+}
+
+.extra_project4{
+    font-size: 16px;
+    font-style: italic;
+}
+
+#indent_project4{
+    color: #275F76;
+}
+
+#one_bullet_proj4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #D0D0D0;
+    width: 920px;
+    font-size: 20px;
+}
+
+/* Predicting Fetal Health*/
+#five_project{
+    color: #D0D0D0;
+    width: 920px;
+    font-size: 24px;
+}
+
+.extra_project5{
+    font-size: 16px;
+    font-style: italic;
+}
+
+#indent_project5{
+    color: #275F76;
+}
+
+#one_bullet_proj5{
+    margin-top: 10px;
+    color: #D0D0D0;
+    width: 920px;
+    font-size: 20px;
+}
+
+#two_bullet_proj6{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #D0D0D0;
+    width: 920px;
+    font-size: 20px;
+}
+
+/* ColabX*/
+#six_project{
+    color: #D0D0D0;
+    width: 920px;
+    font-size: 24px;
+}
+
+.extra_project6{
+    font-size: 16px;
+    font-style: italic;
+}
+
+#indent_project6{
+    color: #275F76;
+}
+
+#one_bullet_proj6{
+    margin-top: 10px;
+    color: #D0D0D0;
+    width: 920px;
+    font-size: 20px;
+}
+
+#two_bullet_proj6{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #D0D0D0;
+    width: 920px;
+    font-size: 20px;
+}
+
+/* fourth divider */
+.divider_4{
+    width: 90%;
+    height: 2px;
+    border-bottom: 1px solid #245D74;
+    margin: 20px auto;
+}
+
+/* skills container */
+.skills_container{
+    background-color: #121313;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+}
+
+/* skills title */
+#skills_name {
+    color: #275F76;
+    text-align: left;
+    padding-left: 58px;
+    font-size: 40px;
+}
+/* tools and languages */
+.tools_list{
+    padding-left: 59px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+#langs{
+    font-weight: normal;
+    font-size: 18px;
+}
+
+/* systems and applications */
+.systems_list{
+    padding-left: 59px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+#systems{
+    font-weight: normal;
+    font-size: 18px;
+}
+
+/* data and security */
+.data_security_list{
+    padding-left: 59px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+#data_security{
+    font-weight: normal;
+    font-size: 18px;
+}
+
+/* fifth divider */
+.divider_5{
+    width: 90%;
+    height: 2px;
+    border-bottom: 1px solid #245D74;
+    margin: 20px auto;
+}
+
+.contact_container{
+    background-color: #121313;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+}
+
+/* experience title */
+#contact_me_name {
+    color: #275F76;
+    text-align: left;
+    padding-left: 58px;
+    font-size: 40px;
+}
+
+.email{
+    padding-left: 59px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: white;
+    /* font-weight: bold; */
+}
+
+.number{
+    padding-left: 59px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: white;
+    /* font-weight: bold; */
+}
+
+
+
