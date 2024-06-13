@@ -38,6 +38,7 @@ body {
 
 .navbar h3:hover {
     color: #124E66;
+    cursor: pointer;
 }
 
 /* container for the entire left side */
