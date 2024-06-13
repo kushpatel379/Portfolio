@@ -1,7 +1,15 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
 body {
     display: flex;
     height: 100vh;
     margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 /* navbar */
@@ -42,7 +50,7 @@ body {
 }
 
 /* container for the entire left side */
-.content {
+#content {
     display: flex;
     flex-direction: column;
     margin-left: 359px;
@@ -52,8 +60,21 @@ body {
     max-height: 100vh;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    
+}
+.nav_list{
+    list-style: none;
+    font-size: 32px;
+    text-decoration: none;
+    padding-right: 40px; 
+}
+
 /* intro container */
-.main-container {
+#main-container {
     background-color: #121313;
     padding: 20px;
     /* margin-top: 0; */
@@ -63,6 +84,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    scroll-behavior: smooth;
     /* overflow-y: hidden; */
 }
 
@@ -133,13 +155,14 @@ body {
     margin-top: 20px;
 }
 
-.education_container {
+#education_container {
     background-color: #121313;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    scroll-behavior: smooth;
 }
 
 #education_name {
@@ -196,13 +219,14 @@ body {
 }
 
 
-.experience_container{
+#experience_container{
     background-color: #121313;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start; 
+    scroll-behavior: smooth;
 }
 
 /* experience title */
@@ -287,13 +311,14 @@ body {
 }
 
 /* project */
-.project_container{
+#project_container{
     background-color: #121313;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start; 
+    scroll-behavior: smooth;
 }
 
 /* project title */
@@ -501,13 +526,14 @@ body {
 }
 
 /* skills container */
-.skills_container{
+#skills_container{
     background-color: #121313;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start; 
+    align-items: flex-start;
+    scroll-behavior: smooth; 
 }
 
 /* skills title */
@@ -567,13 +593,14 @@ body {
     margin: 20px auto;
 }
 
-.contact_container{
+#contact_container{
     background-color: #121313;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start; 
+    scroll-behavior: smooth;
 }
 
 /* experience title */
