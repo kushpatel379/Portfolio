@@ -1,5 +1,5 @@
-html{
-    scroll-behavior: smooth;
+*, html{
+    scroll-behavior: smooth !important;
 }
 
 
@@ -65,6 +65,10 @@ a{
     color: white;
     text-align: center;
     
+}
+
+a:hover{
+    color: #124E66;
 }
 .nav_list{
     list-style: none;
@@ -253,13 +257,13 @@ a{
 /* first experience bullet */
 #one_exp{
     color: #D0D0D0;
-    width: 920px;
+    width: 950px;
     font-size: 20px;
 }
 
 /* extra space between insurancea and june */
 .extra1{
-    margin: 175px;
+    margin: 130px;
 }
 
 #indent{
