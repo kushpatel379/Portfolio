@@ -93,15 +93,9 @@ a:hover{
 }
 
 
-.initial_container {
-    margin-top: 20px;
-}
-
-#initial {
-    color: blue;
-    font-family: "Brush Script MT", cursive;
-    text-align: center;
-    font-size: 40px;
+/* signature */
+.signature{
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
