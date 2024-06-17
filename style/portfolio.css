@@ -182,8 +182,8 @@ a:hover{
     color: #275F76;
 }
 
-/* bachelor list */
-#bachelor{
+/* bachelor/minor/master list */
+#bachelor, #minor, #master{
     color: #D0D0D0;
     width: 353px;
     font-size: 20px;
@@ -231,10 +231,10 @@ a:hover{
     font-size: 16px;
 }
 
-/* first experience bullet */
-#one_exp{
+/* first, second, third, fourth, fifth, sixth, seventh experience bullets */
+#one_exp, #second_exp, #third_exp, #fourth_exp, #fifth_exp, #sixth_exp, #seventh_exp{
     color: #D0D0D0;
-    width: 950px;
+    width: 920px;
     font-size: 20px;
 }
 
@@ -288,69 +288,26 @@ a:hover{
     color: #275F76;
 }
 
-/* HOP2IT */
-#one_project{
+/* All projects */
+#one_project, #two_project, #three_project, #four_project, #five_project, #six_project{
     color: #D0D0D0;
     width: 920px;
     font-size: 24px;
 }
 
-.extra_project{
+/* langauge used bullet */
+.extra_project, .extra_project2, .extra_project3, .extra_project4, .extra_project5, .extra_project6{
     font-size: 16px;
     font-style: italic;
 }
 
-#indent_project{
+/* bullet color */
+#indent_project, #indent_project2, #indent_project3, #indent_project4, #indent_project5, #indent_project6{
     color: #275F76;
 }
 
-#one_bullet_proj{
-    margin-top: 10px;
-    color: #D0D0D0;
-    width: 920px;
-    font-size: 20px;
-}
-
-#two_bullet_proj{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: #D0D0D0;
-    width: 920px;
-    font-size: 20px;
-}
-
-#one_bullet_proj2{
-    margin-top: 10px;
-    color: #D0D0D0;
-    width: 920px;
-    font-size: 20px;
-}
-
-#two_bullet_proj2{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: #D0D0D0;
-    width: 920px;
-    font-size: 20px;
-}
-
-#one_bullet_proj3{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: #D0D0D0;
-    width: 920px;
-    font-size: 20px;
-}
-
-#one_bullet_proj4{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: #D0D0D0;
-    width: 920px;
-    font-size: 20px;
-}
-
-#one_bullet_proj5{
+/* bullet points for each project and its information */
+#one_bullet_proj, #two_bullet_proj, #one_bullet_proj2, #two_bullet_proj2, #one_bullet_proj3, #one_bullet_proj4, #one_bullet_proj5, #two_bullet_proj6, #one_bullet_proj6{
     margin-top: 10px;
     color: #D0D0D0;
     width: 920px;
@@ -383,8 +340,8 @@ a:hover{
     padding-left: 58px;
     font-size: 40px;
 }
-/* tools and languages */
-.tools_list{
+/* tools and languages, systems/applications, data/security */
+.tools_list, .systems_list, .data_security_list{
     padding-left: 59px;
     padding-bottom: 20px;
     font-size: 20px;
@@ -449,5 +406,106 @@ a:hover{
     /* font-weight: bold; */
 }
 
+@media (max-width: 1024px) {
+    .navbar {
+        width: 300px;
+    }
 
+    #content {
+        margin-left: 300px;
+        width: calc(100% - 300px);
+    }
+
+    /* .intro{
+        width: 700px;
+    } */
+
+    /* #main-container {
+        margin-left: 300px;
+        width: calc(100% - 300px);
+    } */
+
+    #name_title {
+        font-size: 100px;
+    }
+
+    #message {
+        width: 700px;
+    }
+
+    #one_exp, #second_exp, #third_exp, #fourth_exp, #fifth_exp, #sixth_exp, #seventh_exp {
+        width: 800px;
+    }
+
+    #one_project, #two_project, #three_project, #four_project, #five_project, #six_project, 
+    #one_bullet_proj, #two_bullet_proj, #one_bullet_proj2, #two_bullet_proj2, #one_bullet_proj3, 
+    #one_bullet_proj4, #one_bullet_proj5, #one_bullet_proj6, #two_bullet_proj6 {
+        width: 800px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 250px;
+    }
+
+    #content {
+        margin-left: 250px;
+        width: calc(100% - 250px);
+    }
+
+    #name_title {
+        font-size: 80px;
+    }
+
+    #message {
+        width: 600px;
+    }
+
+    #one_exp, #second_exp, #third_exp, #fourth_exp, #fifth_exp, #sixth_exp, #seventh_exp {
+        width: 800px;
+    }
+
+    #one_project, #two_project, #three_project, #four_project, #five_project, #six_project, 
+    #one_bullet_proj, #two_bullet_proj, #one_bullet_proj2, #two_bullet_proj2, #one_bullet_proj3, 
+    #one_bullet_proj4, #one_bullet_proj5, #one_bullet_proj6, #two_bullet_proj6 {
+        width: 800px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        width: 200px;
+    }
+
+    #content {
+        margin-left: 200px;
+        width: calc(100% - 200px);
+    }
+
+    #name_title {
+        font-size: 60px;
+    }
+
+    #message {
+        width: 400px;
+    }
+
+    #one_exp, #second_exp, #third_exp, #fourth_exp, #fifth_exp, #sixth_exp, #seventh_exp {
+        width: 400px;
+    }
+
+    #one_project, #two_project, #three_project, #four_project, #five_project, #six_project, 
+    #one_bullet_proj, #two_bullet_proj, #one_bullet_proj2, #two_bullet_proj2, #one_bullet_proj3, 
+    #one_bullet_proj4, #one_bullet_proj5, #one_bullet_proj6, #two_bullet_proj6 {
+        width: 400px;
+    }
+
+    #message, #one_exp, #second_exp, #third_exp, #fourth_exp, #fifth_exp, #sixth_exp, #seventh_exp,
+    #one_project, #two_project, #three_project, #four_project, #five_project, #six_project, 
+    #one_bullet_proj, #two_bullet_proj, #one_bullet_proj2, #two_bullet_proj2, #one_bullet_proj3, 
+    #one_bullet_proj4, #one_bullet_proj5, #one_bullet_proj6, #two_bullet_proj6 {
+        font-size: 16px;
+    }
+}
 
