@@ -190,21 +190,6 @@ a:hover{
     /* padding-left: 58px; */
 }
 
-/* minor list */
-#minor{
-    color: #D0D0D0;
-    width: 353px;
-    font-size: 20px;
-
-}
-
-/* master list */
-#master{
-    color: #D0D0D0;
-    width: 353px;
-    font-size: 20px;
-
-}
 
 /* second divider */
 .divider_2{
@@ -260,42 +245,6 @@ a:hover{
 
 #indent{
     color: #275F76;
-}
-
-#second_exp{
-    color: #D0D0D0;
-    width: 920px;
-    font-size: 20px;
-}
-
-#third_exp{
-    color: #D0D0D0;
-    width: 920px;
-    font-size: 20px;
-}
-
-#fourth_exp{
-    color: #D0D0D0;
-    width: 920px;
-    font-size: 20px;
-}
-
-#fifth_exp{
-    color: #D0D0D0;
-    width: 920px;
-    font-size: 20px;
-}
-
-#sixth_exp{
-    color: #D0D0D0;
-    width: 920px;
-    font-size: 20px;
-}
-
-#seventh_exp{
-    color: #D0D0D0;
-    width: 920px;
-    font-size: 20px;
 }
 
 /* third divider */
@@ -370,22 +319,6 @@ a:hover{
     font-size: 20px;
 }
 
-/* Bookstore database */
-#two_project{
-    color: #D0D0D0;
-    width: 920px;
-    font-size: 24px;
-}
-
-.extra_project2{
-    font-size: 16px;
-    font-style: italic;
-}
-
-#indent_project2{
-    color: #275F76;
-}
-
 #one_bullet_proj2{
     margin-top: 10px;
     color: #D0D0D0;
@@ -401,46 +334,12 @@ a:hover{
     font-size: 20px;
 }
 
-
-/* Multiplication Table */
-#three_project{
-    color: #D0D0D0;
-    width: 920px;
-    font-size: 24px;
-}
-
-.extra_project3{
-    font-size: 16px;
-    font-style: italic;
-}
-
-#indent_project3{
-    color: #275F76;
-}
-
 #one_bullet_proj3{
     margin-top: 10px;
     margin-bottom: 10px;
     color: #D0D0D0;
     width: 920px;
     font-size: 20px;
-}
-
-
-/* Scrabble Game*/
-#four_project{
-    color: #D0D0D0;
-    width: 920px;
-    font-size: 24px;
-}
-
-.extra_project4{
-    font-size: 16px;
-    font-style: italic;
-}
-
-#indent_project4{
-    color: #275F76;
 }
 
 #one_bullet_proj4{
@@ -451,63 +350,8 @@ a:hover{
     font-size: 20px;
 }
 
-/* Predicting Fetal Health*/
-#five_project{
-    color: #D0D0D0;
-    width: 920px;
-    font-size: 24px;
-}
-
-.extra_project5{
-    font-size: 16px;
-    font-style: italic;
-}
-
-#indent_project5{
-    color: #275F76;
-}
-
 #one_bullet_proj5{
     margin-top: 10px;
-    color: #D0D0D0;
-    width: 920px;
-    font-size: 20px;
-}
-
-#two_bullet_proj6{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: #D0D0D0;
-    width: 920px;
-    font-size: 20px;
-}
-
-/* ColabX*/
-#six_project{
-    color: #D0D0D0;
-    width: 920px;
-    font-size: 24px;
-}
-
-.extra_project6{
-    font-size: 16px;
-    font-style: italic;
-}
-
-#indent_project6{
-    color: #275F76;
-}
-
-#one_bullet_proj6{
-    margin-top: 10px;
-    color: #D0D0D0;
-    width: 920px;
-    font-size: 20px;
-}
-
-#two_bullet_proj6{
-    margin-top: 10px;
-    margin-bottom: 10px;
     color: #D0D0D0;
     width: 920px;
     font-size: 20px;
@@ -553,27 +397,9 @@ a:hover{
     font-size: 18px;
 }
 
-/* systems and applications */
-.systems_list{
-    padding-left: 59px;
-    padding-bottom: 20px;
-    font-size: 20px;
-    color: white;
-    font-weight: bold;
-}
-
 #systems{
     font-weight: normal;
     font-size: 18px;
-}
-
-/* data and security */
-.data_security_list{
-    padding-left: 59px;
-    padding-bottom: 20px;
-    font-size: 20px;
-    color: white;
-    font-weight: bold;
 }
 
 #data_security{
