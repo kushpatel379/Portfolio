@@ -6,6 +6,27 @@ document.getElementById("github-logo").addEventListener('click', function(e){
     window.location.href = 'https://github.com/kushpatel379';
 })
 
+function myFunction() {
+    var x = document.getElementById("navList");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
+
+// function myFunction(){
+//     var x = document.getElementById("hamburger");
+//     if (x.className === "navlist"){
+//         x.className += "responsive";
+//     } else{
+//         x.className = "navlist";
+//     }
+// }
+
+
+
 // // document.getElementById("about").scrollIntoView({behavior:"smooth"})
 // // document.getElementById("contact").scrollIntoView({behavior:"smooth"})
 

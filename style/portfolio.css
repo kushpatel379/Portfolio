@@ -45,8 +45,10 @@ body {
 }
 
 .navbar h3:hover {
-    color: #124E66;
+    /* color: #124E66; */
     cursor: pointer;
+    background: linear-gradient(to right, #225C73, #608392);
+
 }
 
 /* container for the entire left side */
@@ -101,21 +103,29 @@ a:hover{
 
 /* name */
 #name_title {
-    color: #225C73;
-    text-align: center;
+    background: linear-gradient(to right, #225C73, #608392);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* color: #225C73; */
+    text-align: left;
     font-size: 137px;
+    /* font-size: 8vw; */
     margin: 0;
 }
 
 /* intro container */
 .intro {
-    text-align: center;
+    text-align: left;
 }
 
 #message {
     color: #D0D0D0;
-    width: 802px;
+    width: 90%;
     font-size: 20px;
+    text-align: left;
+    padding-left: 58px;
+    /* font-size: 2vw; */
+
 }
 
 /* logo container */
@@ -126,8 +136,9 @@ a:hover{
 }
 
 .linkedin {
-    height: 50px;
-    width: 100px;
+    height: 40px;
+    width: 60px;
+    margin-top: -5px;
 }
 
 .linkedin:hover{
@@ -135,8 +146,8 @@ a:hover{
 }
 
 .github {
-    height: 50px;
-    width: 75px;
+    height: 25px;
+    width: 28px;
 }
 
 .github:hover{
@@ -149,6 +160,9 @@ a:hover{
     height: 2px;
     border-bottom: 1px solid #245D74;
     margin-top: 20px;
+    background: linear-gradient(to right, #225C73, #608392);
+    /* border: none; */
+
 }
 
 #education_container {
@@ -166,6 +180,7 @@ a:hover{
     text-align: left;
     padding-left: 58px;
     font-size: 40px;
+    /* font-size: 5vw; */
 }
 
 /* container list */
@@ -187,6 +202,7 @@ a:hover{
     color: #D0D0D0;
     width: 353px;
     font-size: 20px;
+    /* font-size: 2vw; */
     /* padding-left: 58px; */
 }
 
@@ -197,6 +213,8 @@ a:hover{
     height: 2px;
     border-bottom: 1px solid #245D74;
     margin: 20px auto;
+    background: linear-gradient(to right, #225C73, #608392);
+
 }
 
 
@@ -216,6 +234,7 @@ a:hover{
     text-align: left;
     padding-left: 58px;
     font-size: 40px;
+    /* font-size: 5vw; */
 }
 
 #bullet_exp{
@@ -236,6 +255,7 @@ a:hover{
     color: #D0D0D0;
     width: 920px;
     font-size: 20px;
+    /* font-size: 2vw; */
 }
 
 /* extra space between insurancea and june */
@@ -253,6 +273,8 @@ a:hover{
     height: 2px;
     border-bottom: 1px solid #245D74;
     margin: 20px auto;
+    background: linear-gradient(to right, #225C73, #608392);
+
 }
 
 /* project */
@@ -272,6 +294,7 @@ a:hover{
     text-align: left;
     padding-left: 58px;
     font-size: 40px;
+    /* font-size: 5vw; */
 }
 
 .list_project{
@@ -293,11 +316,13 @@ a:hover{
     color: #D0D0D0;
     width: 920px;
     font-size: 24px;
+    /* font-size: 2vw; */
 }
 
 /* langauge used bullet */
 .extra_project, .extra_project2, .extra_project3, .extra_project4, .extra_project5, .extra_project6{
     font-size: 16px;
+    /* font-size: 1.5vw; */
     font-style: italic;
 }
 
@@ -312,6 +337,7 @@ a:hover{
     color: #D0D0D0;
     width: 920px;
     font-size: 20px;
+    /* font-size: 2vw; */
 }
 
 /* fourth divider */
@@ -320,6 +346,8 @@ a:hover{
     height: 2px;
     border-bottom: 1px solid #245D74;
     margin: 20px auto;
+    background: linear-gradient(to right, #225C73, #608392);
+
 }
 
 /* skills container */
@@ -339,29 +367,22 @@ a:hover{
     text-align: left;
     padding-left: 58px;
     font-size: 40px;
+    /* font-size: 5vw; */
 }
 /* tools and languages, systems/applications, data/security */
 .tools_list, .systems_list, .data_security_list{
     padding-left: 59px;
     padding-bottom: 20px;
     font-size: 20px;
+    /* font-size: 2vw; */
     color: white;
     font-weight: bold;
 }
 
-#langs{
+#langs, #systems, #data_security{
     font-weight: normal;
     font-size: 18px;
-}
-
-#systems{
-    font-weight: normal;
-    font-size: 18px;
-}
-
-#data_security{
-    font-weight: normal;
-    font-size: 18px;
+    /* font-size: 2vw; */
 }
 
 /* fifth divider */
@@ -370,6 +391,8 @@ a:hover{
     height: 2px;
     border-bottom: 1px solid #245D74;
     margin: 20px auto;
+    background: linear-gradient(to right, #225C73, #608392);
+
 }
 
 #contact_container{
@@ -406,10 +429,18 @@ a:hover{
     /* font-weight: bold; */
 }
 
+.nav_list .icon{
+    display: none;
+}
+
 @media (max-width: 1024px) {
     .navbar {
         width: 300px;
     }
+
+    /* .picture{
+        width: 100px;
+    } */
 
     #content {
         margin-left: 300px;
@@ -430,23 +461,70 @@ a:hover{
     }
 
     #message {
-        width: 700px;
+        width: 500px;
     }
 
     #one_exp, #second_exp, #third_exp, #fourth_exp, #fifth_exp, #sixth_exp, #seventh_exp {
-        width: 800px;
+        width: 500px;
+    }
+
+    #indent{
+        width:500px
     }
 
     #one_project, #two_project, #three_project, #four_project, #five_project, #six_project, 
     #one_bullet_proj, #two_bullet_proj, #one_bullet_proj2, #two_bullet_proj2, #one_bullet_proj3, 
     #one_bullet_proj4, #one_bullet_proj5, #one_bullet_proj6, #two_bullet_proj6 {
-        width: 800px;
+        width: 500px;
     }
 }
 
 @media (max-width: 768px) {
     .navbar {
         width: 250px;
+    }
+
+    .navbar .nav_list{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar .icon{
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar .nav_list li {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .navbar .nav_list li a {
+        display: block;
+        width: 100%;
+    }
+
+    .nav_list a:not(:first-child){
+        display: none;
+    }
+
+    .nav_list a.icon{
+        float: right;
+        display: block;
+    }
+
+    .nav_list.responsive {position: relative;}
+    .nav_list.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .nav_list.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
     }
 
     #content {
@@ -459,17 +537,17 @@ a:hover{
     }
 
     #message {
-        width: 600px;
+        width: 400px;
     }
 
     #one_exp, #second_exp, #third_exp, #fourth_exp, #fifth_exp, #sixth_exp, #seventh_exp {
-        width: 800px;
+        width: 300px;
     }
 
     #one_project, #two_project, #three_project, #four_project, #five_project, #six_project, 
     #one_bullet_proj, #two_bullet_proj, #one_bullet_proj2, #two_bullet_proj2, #one_bullet_proj3, 
     #one_bullet_proj4, #one_bullet_proj5, #one_bullet_proj6, #two_bullet_proj6 {
-        width: 800px;
+        width: 300px;
     }
 }
 
@@ -488,24 +566,28 @@ a:hover{
     }
 
     #message {
-        width: 400px;
+        width: 150px;
     }
 
     #one_exp, #second_exp, #third_exp, #fourth_exp, #fifth_exp, #sixth_exp, #seventh_exp {
-        width: 400px;
+        width: 100px;
     }
 
     #one_project, #two_project, #three_project, #four_project, #five_project, #six_project, 
     #one_bullet_proj, #two_bullet_proj, #one_bullet_proj2, #two_bullet_proj2, #one_bullet_proj3, 
     #one_bullet_proj4, #one_bullet_proj5, #one_bullet_proj6, #two_bullet_proj6 {
-        width: 400px;
+        width: 100px;
+    }
+
+    .list{
+        width: 100px;
     }
 
     #message, #one_exp, #second_exp, #third_exp, #fourth_exp, #fifth_exp, #sixth_exp, #seventh_exp,
     #one_project, #two_project, #three_project, #four_project, #five_project, #six_project, 
     #one_bullet_proj, #two_bullet_proj, #one_bullet_proj2, #two_bullet_proj2, #one_bullet_proj3, 
     #one_bullet_proj4, #one_bullet_proj5, #one_bullet_proj6, #two_bullet_proj6 {
-        font-size: 16px;
+        font-size: 1.5vw;
     }
 }
 

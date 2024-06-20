@@ -13,7 +13,7 @@
 
 <body>
 
-    <div class="navbar">
+    <nav class="navbar" id="hamburger">
         <img src="assets/kush_portfolio.jpg" alt="pic" class="picture">
         <ul class = "nav_list">
             
@@ -35,12 +35,16 @@
             <a href = "#contact_container">
                 <li> Contact Me </li>
             </a>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class = "fa fa-bars"> </i>
+            </a>
         </ul>
 
-    </div>
+    </nav>
 
     <div id="content">
-        <div id ="main-container">
+        <section id ="main-container">
             <div class="initial_container">
                 <!-- <h3 id="initial"> KP </h3> -->
                  <img src = "assets/KP-SignatureGenerator 1.png" alt="pic" class="signature">
@@ -69,9 +73,9 @@
             </div>
 
             <div class="divider_1"></div>
-        </div> 
+        </section> 
 
-        <div id ="education_container">
+        <section id ="education_container">
             <h1 id="education_name">Education</h1>
 
             <div class = "list">
@@ -101,9 +105,9 @@
                 </ul>
             </div>
             <div class="divider_2"></div>
-        </div>
+        </section>
 
-        <div id="experience_container">
+        <section id="experience_container">
             <h1 id="experience_name">Experience</h1>
 
             <div class = "list_exp">
@@ -122,9 +126,9 @@
             </div>
             <div class="divider_3"></div>
 
-        </div>
+        </section>
 
-        <div id="project_container">
+        <section id="project_container">
             <h1 id="project_name"> Projects </h1>
             <div class = "list_project"> 
                 <ul id = "bullet_project">
@@ -167,22 +171,22 @@
                 </ul>
             </div>
             <div class="divider_4"></div>
-        </div>
+        </section>
 
-        <div id = "skills_container">
+        <section id = "skills_container">
             <h1 id = "skills_name"> Skills </h1>
             <div class = "tools_list"> Tools and Languages <br> <span id = "langs"> HTML - CSS - Javascript - C - C++ - Python - Java - WebGl</span> </div>
             <div class = "systems_list"> Systems and Applications <br> <span id = "systems"> Windows - Linux - Kali Linux - Ubuntu - Office 365 - Git - Jupyter Notebook </span></div>
             <div class = "data_security_list"> Data and Security <br> <span id = "data_security"> SQL - Oracle - Ncrack - Snort - Autopsy - Armitage </span></div>
             <div class="divider_5"></div>
-        </div>
-        <div id = "contact_container">
+        </section>
+        <section id = "contact_container">
             <h1 id = "contact_me_name"> Contact Me </h1>
             <div class = "email"> Email: kushpatel379@gmail.com </div>
             <div class = "number"> Phone: (774) 266 - 7974 </div>
-        </div>
+        </section>
     </div>
-    <script src = "./script/portfolio.js"></script>
+    <script src = "./script/portfolio.js" defer></script>
 </body>
 
 </html>
