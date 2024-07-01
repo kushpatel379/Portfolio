@@ -1,17 +1,18 @@
-document.getElementById("linkedin-logo").addEventListener('click', function(e){
-    window.location.href = 'https://www.linkedin.com/in/kush-p-68730a153/';
-})
+// document.getElementById("linkedin-logo").addEventListener('click', function(e){
+//     window.location.href = 'https://www.linkedin.com/in/kush-p-68730a153/';
+// })
 
 document.getElementById("github-logo").addEventListener('click', function(e){
     window.location.href = 'https://github.com/kushpatel379';
+    console.log("hi")
 })
 
 function myFunction() {
-    var x = document.getElementById("navList");
-    if (x.style.display === "block") {
-        x.style.display = "none";
+    var hamburger = document.getElementById("navList");
+    if (hamburger.style.display === "nav_list") {
+        hamburger.style.display = "responsive";
     } else {
-        x.style.display = "block";
+        hamburger.style.display = "nav_list";
     }
 }
 

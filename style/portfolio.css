@@ -44,12 +44,15 @@ body {
     text-align: center;
 }
 
-.navbar h3:hover {
-    /* color: #124E66; */
-    cursor: pointer;
-    background: linear-gradient(to right, #225C73, #608392);
 
+.navbar h3:hover, a:hover {
+    cursor: pointer;
+    color: #124E66;
+    background: linear-gradient(to right, #225C73, #608392);
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
 }
+
 
 /* container for the entire left side */
 #content {
@@ -69,14 +72,19 @@ a{
     
 }
 
-a:hover{
-    color: #124E66;
-}
 .nav_list{
     list-style: none;
     font-size: 32px;
     text-decoration: none;
     padding-right: 40px; 
+}
+
+#icon2{
+    display: none;
+}
+
+#icon{
+    display: none;
 }
 
 /* intro container */
@@ -107,7 +115,7 @@ a:hover{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     /* color: #225C73; */
-    text-align: left;
+    text-align: center;
     font-size: 137px;
     /* font-size: 8vw; */
     margin: 0;
@@ -121,8 +129,9 @@ a:hover{
 #message {
     color: #D0D0D0;
     width: 90%;
+    word-break: break-word;
     font-size: 20px;
-    text-align: left;
+    text-align: center;
     padding-left: 58px;
     /* font-size: 2vw; */
 
@@ -130,29 +139,49 @@ a:hover{
 
 /* logo container */
 .logos {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     display: flex;
-    gap: 10px;
-}
-
-.linkedin {
-    height: 40px;
-    width: 60px;
-    margin-top: -5px;
-}
-
-.linkedin:hover{
-    cursor: pointer;
+    gap: 40px;
 }
 
 .github {
+    height: 25px;
+    width: 28px;
+    margin-top: 5px;
+}
+
+.github:hover{
+    cursor: pointer;
+}
+
+.mail {
+    height: 25px;
+    width: 31.25px;
+    margin-top: 5px;
+}
+
+.mail:hover{
+    cursor: pointer;
+}
+
+.phone {
+    height: 25px;
+    width: 25px;
+    margin-top: 5px;
+}
+
+.phone:hover{
+    cursor: pointer;
+}
+
+/* .github {
     height: 25px;
     width: 28px;
 }
 
 .github:hover{
     cursor: pointer;
-}
+} */
 
 /* dividing line */
 .divider_1 {
@@ -253,14 +282,14 @@ a:hover{
 /* first, second, third, fourth, fifth, sixth, seventh experience bullets */
 #one_exp, #second_exp, #third_exp, #fourth_exp, #fifth_exp, #sixth_exp, #seventh_exp{
     color: #D0D0D0;
-    width: 920px;
+    width: 100%;
     font-size: 20px;
     /* font-size: 2vw; */
 }
 
 /* extra space between insurancea and june */
 .extra1{
-    margin: 130px;
+    margin: 152px;
 }
 
 #indent{
@@ -314,8 +343,9 @@ a:hover{
 /* All projects */
 #one_project, #two_project, #three_project, #four_project, #five_project, #six_project{
     color: #D0D0D0;
-    width: 920px;
+    width: 90%;
     font-size: 24px;
+    word-break: break-word;
     /* font-size: 2vw; */
 }
 
@@ -335,7 +365,8 @@ a:hover{
 #one_bullet_proj, #two_bullet_proj, #one_bullet_proj2, #two_bullet_proj2, #one_bullet_proj3, #one_bullet_proj4, #one_bullet_proj5, #two_bullet_proj6, #one_bullet_proj6{
     margin-top: 10px;
     color: #D0D0D0;
-    width: 920px;
+    /* width: 920px; */
+    word-break: break-word;
     font-size: 20px;
     /* font-size: 2vw; */
 }
@@ -429,9 +460,9 @@ a:hover{
     /* font-weight: bold; */
 }
 
-.nav_list .icon{
+/* .nav_list .icon{
     display: none;
-}
+} */
 
 @media (max-width: 1024px) {
     .navbar {
@@ -461,21 +492,29 @@ a:hover{
     }
 
     #message {
-        width: 500px;
+        width: 100%;
+        word-break: break-word;
+        padding-left: 0px;
+
     }
 
     #one_exp, #second_exp, #third_exp, #fourth_exp, #fifth_exp, #sixth_exp, #seventh_exp {
-        width: 500px;
+        width: 90%;
+        word-break: break-word;
+
     }
 
     #indent{
-        width:500px
+        /* width:100%; */
+        word-break: break-word;
+
     }
 
     #one_project, #two_project, #three_project, #four_project, #five_project, #six_project, 
     #one_bullet_proj, #two_bullet_proj, #one_bullet_proj2, #two_bullet_proj2, #one_bullet_proj3, 
     #one_bullet_proj4, #one_bullet_proj5, #one_bullet_proj6, #two_bullet_proj6 {
-        width: 500px;
+        width: 100%;
+        word-break: break-word;
     }
 }
 
@@ -484,38 +523,15 @@ a:hover{
         width: 250px;
     }
 
-    .navbar .nav_list{
+    /* .nav_list a:not(:first-child){
         display: none;
-        flex-direction: column;
-        width: 100%;
-    }
+    } */
 
-    .navbar .icon{
-        display: block;
-        cursor: pointer;
+    .nav_list.responsive {
+        position: relative;
     }
-
-    .navbar .nav_list li {
-        text-align: center;
-        padding: 10px;
-    }
-
-    .navbar .nav_list li a {
-        display: block;
-        width: 100%;
-    }
-
-    .nav_list a:not(:first-child){
-        display: none;
-    }
-
-    .nav_list a.icon{
-        float: right;
-        display: block;
-    }
-
-    .nav_list.responsive {position: relative;}
-    .nav_list.responsive .icon {
+    
+    .nav_list.responsive a.icon {
         position: absolute;
         right: 0;
         top: 0;
@@ -537,23 +553,40 @@ a:hover{
     }
 
     #message {
-        width: 400px;
+        width: 100%;
+        word-break: break-word;
+
+    }
+
+    .list_exp{
+        /* width: 100%; */
+        word-break: break-word;
+        /* padding-left: 0px; */
     }
 
     #one_exp, #second_exp, #third_exp, #fourth_exp, #fifth_exp, #sixth_exp, #seventh_exp {
-        width: 300px;
+        width: 100%;
     }
 
     #one_project, #two_project, #three_project, #four_project, #five_project, #six_project, 
     #one_bullet_proj, #two_bullet_proj, #one_bullet_proj2, #two_bullet_proj2, #one_bullet_proj3, 
     #one_bullet_proj4, #one_bullet_proj5, #one_bullet_proj6, #two_bullet_proj6 {
-        width: 300px;
+        width: 100%;
+        word-break: break-word;
     }
 }
 
 @media (max-width: 480px) {
     .navbar {
         width: 200px;
+    }
+
+    /* #icon2{
+        display: inline-block;
+    } */
+
+    .nav_list{
+        display: none;
     }
 
     #content {
@@ -566,21 +599,29 @@ a:hover{
     }
 
     #message {
-        width: 150px;
+        width: 100%;
+        word-break: break-word;
+
     }
 
     #one_exp, #second_exp, #third_exp, #fourth_exp, #fifth_exp, #sixth_exp, #seventh_exp {
         width: 100px;
+        word-break: break-word;
+
     }
 
     #one_project, #two_project, #three_project, #four_project, #five_project, #six_project, 
     #one_bullet_proj, #two_bullet_proj, #one_bullet_proj2, #two_bullet_proj2, #one_bullet_proj3, 
     #one_bullet_proj4, #one_bullet_proj5, #one_bullet_proj6, #two_bullet_proj6 {
         width: 100px;
+        word-break: break-word;
+
     }
 
     .list{
         width: 100px;
+        word-break: break-word;
+
     }
 
     #message, #one_exp, #second_exp, #third_exp, #fourth_exp, #fifth_exp, #sixth_exp, #seventh_exp,

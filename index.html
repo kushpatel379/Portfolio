@@ -13,9 +13,16 @@
 
 <body>
 
-    <nav class="navbar" id="hamburger">
+    <nav class="navbar">
         <img src="assets/kush_portfolio.jpg" alt="pic" class="picture">
-        <ul class = "nav_list">
+
+        <label for = "toggle" id = "icon2"> &#9776</label>
+        <input type = "checkbox" id="icon"/>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class = "fa fa-bars"> &#9776 </i>
+        </a>
+
+        <ul class = "nav_list" id="hamburger">
             
             <a href = "#main-container">
                 <li> About <p></p></li>
@@ -36,9 +43,6 @@
                 <li> Contact Me </li>
             </a>
 
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class = "fa fa-bars"> </i>
-            </a>
         </ul>
 
     </nav>
@@ -68,8 +72,11 @@
             </div>
 
             <div class="logos">
-                <img src="assets/linkedin.png" alt="LinkedIn logo" class="linkedin" id = "linkedin-logo">
+                <!-- <img src="assets/linkedin.png" alt="LinkedIn logo" class="linkedin" id = "linkedin-logo"> -->
                 <img src="assets/github.png" alt="GitHub logo" class="github" id = "github-logo">
+                <img src="assets/mail.png" alt="Mail logo" class="mail" id = "mail-logo">
+                <img src="assets/phone.png" alt="Phone logo" class="phone" id = "phone-logo">
+
             </div>
 
             <div class="divider_1"></div>
