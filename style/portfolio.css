@@ -589,10 +589,14 @@ a{
         width: 200px;
     }
 
+    .picture{
+        display: none;
+    }
+
     /* #icon2{
         display: inline-block;
     } */
-
+     
     .nav_list{
         display: none;
     }
