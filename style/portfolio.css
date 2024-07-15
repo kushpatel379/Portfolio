@@ -74,7 +74,7 @@ a{
 
 .nav_list{
     list-style: none;
-    font-size: 32px;
+    font-size: 30px;
     text-decoration: none;
     padding-right: 40px; 
 }
@@ -84,6 +84,14 @@ a{
 }
 
 #icon{
+    display: none;
+}
+
+#icon_bars{
+    display: none;
+}
+
+.fa fa-bars{
     display: none;
 }
 
@@ -229,7 +237,7 @@ a{
 /* bachelor/minor/master list */
 #bachelor, #minor, #master{
     color: #D0D0D0;
-    width: 353px;
+    /* width: 353px; */
     font-size: 20px;
     /* font-size: 2vw; */
     /* padding-left: 58px; */
@@ -559,7 +567,7 @@ a{
     }
 
     .list_exp{
-        /* width: 100%; */
+        width: 100%;
         word-break: break-word;
         /* padding-left: 0px; */
     }
