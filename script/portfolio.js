@@ -15,7 +15,30 @@ function myFunction() {
         hamburger.style.display = "nav_list";
     }
 }
+const ham = document.querySelector('.icon2');  // Assuming 'ham' is a class of the element
+const nav = document.querySelector('.navbar');  // Assuming 'nav' is a class of the element
 
+ham.addEventListener('click', () => {
+    console.log('clicked');
+    // if (parseInt(nav.style.left) <= 0) {
+    //     console.log("if", parseInt(nav.style.left));
+    //     // nav.style.left = '100%';
+    //     nav.style.display = "block";
+        
+    // } else {
+    //     console.log("else", parseInt(nav.style.left));
+    //     // nav.style.left = '-100%';
+    //     nav.style.display = "none";
+    // }
+
+    if (nav.style.display === "none" || nav.style.display === ""){
+        nav.style.display = "block";
+        console.log("hi")
+    }else{
+        nav.style.display = "none";
+        console.log("hi2")
+    }
+});
 
 // function myFunction(){
 //     var x = document.getElementById("hamburger");

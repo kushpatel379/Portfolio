@@ -79,21 +79,21 @@ a{
     padding-right: 40px; 
 }
 
-#icon2{
+.icon2{
     display: none;
 }
 
-#icon{
+.icon{
     display: none;
 }
 
-#icon_bars{
+/*#icon_bars{
     display: none;
-}
+}*/
 
-.fa fa-bars{
+/*.fa fa-bars{
     display: none;
-}
+} */
 
 /* intro container */
 #main-container {
@@ -573,7 +573,7 @@ a{
     }
 
     #one_exp, #second_exp, #third_exp, #fourth_exp, #fifth_exp, #sixth_exp, #seventh_exp {
-        width: 100%;
+        /* width: 100%; */
     }
 
     #one_project, #two_project, #three_project, #four_project, #five_project, #six_project, 
@@ -586,24 +586,36 @@ a{
 
 @media (max-width: 480px) {
     .navbar {
-        width: 200px;
+        display: none;
     }
 
     .picture{
         display: none;
     }
 
-    /* #icon2{
+    /* #menu_toggle{
         display: inline-block;
     } */
-     
-    .nav_list{
-        display: none;
+
+    .icon2{
+        display: block;
+        position: absolute;
+        right: 0;
+        color: blue;
     }
+    /* .icon{
+        display: inline-block;
+        position: absolute;
+        color: blue;
+    } */
+    
+    /* .nav_list{
+        display: none;
+    } */
 
     #content {
-        margin-left: 200px;
-        width: calc(100% - 200px);
+        margin-left: auto;
+        width: 100%;
     }
 
     #name_title {
@@ -617,7 +629,7 @@ a{
     }
 
     #one_exp, #second_exp, #third_exp, #fourth_exp, #fifth_exp, #sixth_exp, #seventh_exp {
-        width: 100px;
+        /* width: 100px; */
         word-break: break-word;
 
     }
@@ -625,22 +637,29 @@ a{
     #one_project, #two_project, #three_project, #four_project, #five_project, #six_project, 
     #one_bullet_proj, #two_bullet_proj, #one_bullet_proj2, #two_bullet_proj2, #one_bullet_proj3, 
     #one_bullet_proj4, #one_bullet_proj5, #one_bullet_proj6, #two_bullet_proj6 {
-        width: 100px;
+        /* width: 100%; */
         word-break: break-word;
 
     }
 
     .list{
-        width: 100px;
+        /* width: 100px; */
         word-break: break-word;
 
     }
+    
 
-    #message, #one_exp, #second_exp, #third_exp, #fourth_exp, #fifth_exp, #sixth_exp, #seventh_exp,
+    #message, #one_exp, #second_exp, #third_exp, #fourth_exp, #fifth_exp, #sixth_exp, #seventh_exp 
+    {
+        font-size: 20px;
+        /* width: auto; */
+    }
+
     #one_project, #two_project, #three_project, #four_project, #five_project, #six_project, 
     #one_bullet_proj, #two_bullet_proj, #one_bullet_proj2, #two_bullet_proj2, #one_bullet_proj3, 
     #one_bullet_proj4, #one_bullet_proj5, #one_bullet_proj6, #two_bullet_proj6 {
-        font-size: 1.5vw;
+        font-size: 20px;
+        /* width: auto; */
     }
 }
 
