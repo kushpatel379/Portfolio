@@ -34,32 +34,18 @@ ham.addEventListener('click', () => {
     if (nav.style.display === "none" || nav.style.display === ""){
         nav.style.display = "block";
         console.log("hi")
+
+        document.querySelector('.nav_list').addEventListener('click', () => {             //this event listener hides the navbar after choosing a section to go to 
+            nav.style.display = "none";
+        })
     }else{
         nav.style.display = "none";
         console.log("hi2")
+
+        document.querySelector('.nav_list').addEventListener('click', () => {            
+            nav.style.display = "none";
+        })
+
+
     }
 });
-
-// function myFunction(){
-//     var x = document.getElementById("hamburger");
-//     if (x.className === "navlist"){
-//         x.className += "responsive";
-//     } else{
-//         x.className = "navlist";
-//     }
-// }
-
-
-
-// // document.getElementById("about").scrollIntoView({behavior:"smooth"})
-// // document.getElementById("contact").scrollIntoView({behavior:"smooth"})
-
-// document.getElementById("contact").addEventListener("click", function(){
-//     this.scrollIntoView({behavior:"smooth"})
-//     console.log("hi")
-// })
-
-// // function contact_scroll(){
-// //     document.getElementById("contact").scrollIntoView(false)
-// //     console.log("hi")
-// // }
