@@ -28,6 +28,11 @@ body {
     align-items: center;
 }
 
+.navbar_toggle{
+    /* display: block; */
+}
+
+
 /* profile pic */
 .picture {
     height: 200px;
@@ -78,6 +83,9 @@ a{
     text-decoration: none;
     padding-right: 40px; 
 }
+
+
+
 
 .icon2{
     display: none;
@@ -472,9 +480,11 @@ a{
     display: none;
 } */
 
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     .navbar {
         width: 300px;
+        /* display: block; */
+
     }
 
     /* .picture{
@@ -526,9 +536,10 @@ a{
     }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .navbar {
         width: 250px;
+        /* display: none; */
     }
 
     /* .nav_list a:not(:first-child){
@@ -584,7 +595,7 @@ a{
     }
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .navbar {
         display: none;
     }
@@ -601,7 +612,8 @@ a{
         display: block;
         position: absolute;
         right: 0;
-        color: blue;
+        color: white;
+        font-size: 30px;
     }
     /* .icon{
         display: inline-block;
