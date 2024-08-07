@@ -49,8 +49,13 @@ body {
     text-align: center;
 }
 
+nav a:hover{
+    cursor: pointer;
+    color: #124E66;
+}
 
-.navbar h3:hover, a:hover {
+
+.navbar h3:hover{
     cursor: pointer;
     color: #124E66;
     background: linear-gradient(to right, #225C73, #608392);
@@ -153,6 +158,10 @@ a{
 
 }
 
+/* a{
+    text-decoration: none;
+} */
+
 /* logo container */
 .logos {
     /* margin-top: 20px; */
@@ -176,8 +185,12 @@ a{
     margin-top: 5px;
 }
 
+
 .mail:hover{
     cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    user-select: none;
 }
 
 .phone {
@@ -188,16 +201,11 @@ a{
 
 .phone:hover{
     cursor: pointer;
+    outline: none;
+    background-color: transparent;
+
 }
 
-/* .github {
-    height: 25px;
-    width: 28px;
-}
-
-.github:hover{
-    cursor: pointer;
-} */
 
 /* dividing line */
 .divider_1 {
