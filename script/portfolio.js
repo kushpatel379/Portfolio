@@ -37,9 +37,6 @@ ham.addEventListener('click', (event) => {
             event.stopPropagation();       
             nav.style.display = "none";
         })
-
-        
-
     }
 });
 
@@ -50,6 +47,9 @@ document.body.addEventListener('click', () => {
         console.log("in body")
     }
 })
+
+const scroll_exp  = document.getElementById("experience_container")
+
 
 
 //for 768 pixels
